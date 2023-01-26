@@ -1,14 +1,26 @@
 import React, { Component } from "react";
+import { Link, NavLink } from "react-router-dom";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import userAvatar from "../assets/img/img1.jpg";
-import { 
-    dashboardMenu, 
-    applicationsMenu, 
-    pagesMenu, 
-    uiElementsMenu 
+import {
+    dashboardMenu,
+    applicationsMenu,
+    pagesMenu,
+    uiElementsMenu
 } from "../data/Menu";
 
 export default class Sidebar extends Component {
+    constructor(props) {
+        super(props);
+
+        // toggle sidebar offset if offset is set to true
+        if (this.props.offset) {
+            document.querySelector("body").classList.add("sidebar-offset");
+        } else {
+            document.querySelector("body").classList.remove("sidebar-offset", "sidebar-show");
+        }
+    }
+
     toggleFooterMenu = (e) => {
         e.preventDefault();
 
@@ -20,10 +32,10 @@ export default class Sidebar extends Component {
         return (
             <div className="sidebar">
                 <div className="sidebar-header">
-                    <a href="./" className="sidebar-logo">dashport</a>
+                    <Link to="/" className="sidebar-logo">dashport</Link>
                 </div>
-                <PerfectScrollbar className="sidebar-body" ref = {ref => this._scrollBarRef = ref}>
-                    <SidebarMenu onUpdateSize = {() => this._scrollBarRef.updateScroll() } />
+                <PerfectScrollbar className="sidebar-body" ref={ref => this._scrollBarRef = ref}>
+                    <SidebarMenu onUpdateSize={() => this._scrollBarRef.updateScroll()} />
                 </PerfectScrollbar>
                 <div className="sidebar-footer">
                     <div className="sidebar-footer-top">
@@ -31,22 +43,22 @@ export default class Sidebar extends Component {
                             <img src={userAvatar} alt="" />
                         </div>
                         <div className="sidebar-footer-body">
-                            <h6><a href="../pages/profile.html">Shaira Diaz</a></h6>
+                            <h6><Link to="../pages/profile.html">Shaira Diaz</Link></h6>
                             <p>Premium Member</p>
                         </div>
-                        <a onClick={this.toggleFooterMenu} href="" className="dropdown-link"><i className="ri-arrow-down-s-line"></i></a>
+                        <Link onClick={this.toggleFooterMenu} to="" className="dropdown-link"><i className="ri-arrow-down-s-line"></i></Link>
                     </div>
                     <div className="sidebar-footer-menu">
                         <nav className="nav">
-                            <a href=""><i className="ri-edit-2-line"></i> Edit Profile</a>
-                            <a href=""><i className="ri-profile-line"></i> View Profile</a>
+                            <Link to=""><i className="ri-edit-2-line"></i> Edit Profile</Link>
+                            <Link to=""><i className="ri-profile-line"></i> View Profile</Link>
                         </nav>
                         <hr />
                         <nav className="nav">
-                            <a href="#"><i className="ri-question-line"></i> Help Center</a>
-                            <a href="#"><i className="ri-lock-line"></i> Privacy Settings</a>
-                            <a href="#"><i className="ri-user-settings-line"></i> Account Settings</a>
-                            <a href="#"><i className="ri-logout-box-r-line"></i> Log Out</a>
+                            <Link to=""><i className="ri-question-line"></i> Help Center</Link>
+                            <Link to=""><i className="ri-lock-line"></i> Privacy Settings</Link>
+                            <Link to=""><i className="ri-user-settings-line"></i> Account Settings</Link>
+                            <Link to=""><i className="ri-logout-box-r-line"></i> Log Out</Link>
                         </nav>
                     </div>
                 </div>
@@ -62,19 +74,23 @@ class SidebarMenu extends Component {
             if (m.submenu) {
                 sm = m.submenu.map((sm, key) => {
                     return (
-                        <a href={sm.link} className="nav-sub-link" key={key}>{sm.label}</a>
+                        <NavLink to={sm.link} className="nav-sub-link" key={key}>{sm.label}</NavLink>
                     )
                 })
             }
-    
+
             return (
                 <li key={key} className="nav-item">
-                    <a href={(!sm)? m.link : ""} onClick={(sm)? this.toggleSubMenu : ""} className={(sm)? "nav-link has-sub" : "nav-link"}><i className={m.icon}></i> <span>{m.label}</span></a>
-                    {m.submenu && <nav className="nav nav-sub">{sm}</nav> }
+                    {(!sm) ? (
+                        <NavLink to={m.link} className="nav-link"><i className={m.icon}></i> <span>{m.label}</span></NavLink>
+                    ) : (
+                        <Link onClick={this.toggleSubMenu} className="nav-link has-sub"><i className={m.icon}></i> <span>{m.label}</span></Link>
+                    )}
+                    {m.submenu && <nav className="nav nav-sub">{sm}</nav>}
                 </li>
             )
         });
-    
+
         return (
             <ul className="nav nav-sidebar">
                 {menu}
@@ -85,7 +101,7 @@ class SidebarMenu extends Component {
     // Toggle menu group
     toggleMenu = (e) => {
         e.preventDefault();
-        
+
         let parent = e.target.closest('.nav-group');
         parent.classList.toggle('show');
 
@@ -95,12 +111,13 @@ class SidebarMenu extends Component {
     // Toggle submenu while closing siblings' submenu
     toggleSubMenu = (e) => {
         e.preventDefault();
+
         let parent = e.target.closest('.nav-item');
         let node = parent.parentNode.firstChild;
 
         while (node) {
-        if (node !== parent && node.nodeType === Node.ELEMENT_NODE)
-            node.classList.remove('show');
+            if (node !== parent && node.nodeType === Node.ELEMENT_NODE)
+                node.classList.remove('show');
             node = node.nextElementSibling || node.nextSibling;
         }
 
@@ -113,19 +130,19 @@ class SidebarMenu extends Component {
         return (
             <React.Fragment>
                 <div className="nav-group show">
-                    <a href="#" className="nav-label" onClick={this.toggleMenu}>Dashboard</a>
+                    <Link className="nav-label" onClick={this.toggleMenu}>Dashboard</Link>
                     {this.populateMenu(dashboardMenu)}
                 </div>
                 <div className="nav-group show">
-                    <a href="#" className="nav-label" onClick={this.toggleMenu}>Applications</a>
+                    <Link className="nav-label" onClick={this.toggleMenu}>Applications</Link>
                     {this.populateMenu(applicationsMenu)}
                 </div>
                 <div className="nav-group show">
-                    <a href="#" className="nav-label" onClick={this.toggleMenu}>Pages</a>
+                    <Link className="nav-label" onClick={this.toggleMenu}>Pages</Link>
                     {this.populateMenu(pagesMenu)}
                 </div>
                 <div className="nav-group show">
-                    <a href="#" className="nav-label" onClick={this.toggleMenu}>UI Elements</a>
+                    <Link className="nav-label" onClick={this.toggleMenu}>UI Elements</Link>
                     {this.populateMenu(uiElementsMenu)}
                 </div>
             </React.Fragment>
@@ -133,11 +150,24 @@ class SidebarMenu extends Component {
     }
 }
 
-// Close sidebar footer menu when clicked outside of it
-window.addEventListener("click", function(e){
-    console.log(e.target);
+window.addEventListener("click", function (e) {
+    // Close sidebar footer menu when clicked outside of it
     let tar = e.target;
-    if (!tar.closest('.sidebar-footer')) {
-        this.document.querySelector('.sidebar').classList.remove('footer-menu-show');
+    if (!tar.closest(".sidebar-footer")) {
+        document.querySelector(".sidebar").classList.remove("footer-menu-show");
+    }
+
+    // Hide sidebar offset when clicked outside of sidebar
+    if (!tar.closest(".sidebar") && !tar.closest(".menu-link")) {
+        document.querySelector("body").classList.remove("sidebar-show");
+    }
+});
+
+window.addEventListener("load", function () {
+    let skinMode = localStorage.getItem("sidebar-skin");
+    let HTMLTag = document.querySelector("html");
+
+    if (skinMode) {
+        HTMLTag.setAttribute("data-sidebar", skinMode);
     }
 });

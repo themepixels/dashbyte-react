@@ -122,7 +122,7 @@ const pagesMenu = [
         "submenu": [
             {
                 "label": "Sign In Basic",
-                "link": "signin"
+                "link": "/pages/signin"
             },
             {
                 "label": "Sign In Cover",

@@ -5,7 +5,7 @@
   }
 
   ////////// Sidebar //////////
-  .sidebar:not(.sidebar-prime) {
+  &:not([data-sidebar="prime"]) .sidebar {
     background-color: $dark-highlight;
     box-shadow: none;
     border-right: 1px solid $border-color-dark;
@@ -93,7 +93,7 @@
     }
   }
 
-  .sidebar-prime {
+  &[data-sidebar="prime"] .sidebar {
     .nav-sidebar .nav-link:hover,
     .nav-sidebar .nav-link:focus {
       background-color: transparent;
@@ -148,7 +148,7 @@
                   0 10px 20px rgba(#000, 0.1);
 
       hr {
-        background-color: lighten($border-color-dark, 5%);
+        border-color: lighten($border-color-dark, 5%);
         opacity: 1;
       }
     }

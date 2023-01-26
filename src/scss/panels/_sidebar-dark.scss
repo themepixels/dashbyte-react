@@ -1,21 +1,38 @@
-.sidebar-dark {
-  background-color: #192030;
-  @include media-breakpoint-up(lg) { box-shadow: none; }
+[data-sidebar="dark"] {
+  .sidebar {
+    background-color: #192030;
 
-  &::before { background-color: rgba(darken(#192030, 5%), .75); }
+    @include media-breakpoint-up(lg) {
+      box-shadow: none;
+    }
 
-  .sidebar-logo { color: $primary; }
-  .sidebar-header { border-bottom-color: rgba(#fff, .06); }
+    &::before {
+      background-color: rgba(darken(#192030, 5%), .75);
+    }
 
-  .sidebar-body {
-    .nav-group { border-bottom-color: rgba(#fff, .06); }
-    .nav-label { color: rgba(#fff, .25); }
+    .sidebar-logo {
+      color: $primary;
+    }
 
-    > .ps__rail-y {
-      background-color: rgba(#fff, .1);
+    .sidebar-header {
+      border-bottom-color: rgba(#fff, .06);
+    }
 
-      > .ps__thumb-y {
-        background-color: rgba(#fff, .75);
+    .sidebar-body {
+      .nav-group {
+        border-bottom-color: rgba(#fff, .06);
+      }
+
+      .nav-label {
+        color: rgba(#fff, .25);
+      }
+
+      >.ps__rail-y {
+        background-color: rgba(#fff, .1);
+
+        >.ps__thumb-y {
+          background-color: rgba(#fff, .75);
+        }
       }
     }
   }
@@ -25,23 +42,33 @@
       color: rgba(#fff, .6);
 
       &:hover,
-      &:focus { color: rgba(#fff, .85); }
+      &:focus {
+        color: rgba(#fff, .85);
+      }
 
       &.active {
         color: $primary;
         font-weight: 400;
       }
 
-      &.has-sub::after { color: rgba(#fff, .6); }
+      &.has-sub::after {
+        color: rgba(#fff, .6);
+      }
     }
 
     .nav-sub-link {
       color: rgba(#fff, .5);
 
-      &::before { background-color: rgba(#fff, .4); }
+      &::before {
+        background-color: rgba(#fff, .4);
+      }
+
       &.active {
         color: rgba(#fff, .85);
-        &::before { background-color: $primary; }
+
+        &::before {
+          background-color: $primary;
+        }
       }
     }
   }
@@ -63,8 +90,13 @@
   }
 
   .sidebar-footer-body {
-    h6 a { color: #fff; }
-    p { color: rgba(#fff, .4); }
+    h6 a {
+      color: #fff;
+    }
+
+    p {
+      color: rgba(#fff, .4);
+    }
   }
 
   .sidebar-footer-menu {
