@@ -1,0 +1,11 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+export default function Footer() {
+  return (
+    <div className="main-footer main-footer-docs">
+      <span>&copy; 2022. Dashport. All Rights Reserved.</span>
+      <span>Created by: <Link to="http://themepixels.me" target="_blank">Themepixels</Link></span>
+    </div>
+  )
+}

@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Img1 from "../assets/img/img10.jpg";
 import Img2 from "../assets/img/img11.jpg";
 import Img3 from "../assets/img/img14.jpg";
 import Img4 from "../assets/img/img15.jpg";
 
+// eslint-disable-next-line
 export default Notification = [
   {
     "avatar": (<img src={Img1} alt=""/>),
@@ -25,7 +28,7 @@ export default Notification = [
   },
   {
     "avatar": (<img src={Img3} alt="" />),
-    "text": (<React.Fragment>Reminder: <strong>Jerry Cuares</strong> invited you to like <strong>Cuares Surveying Services</strong>. <br /><a href="#">Accept</a> or <a href="#">Decline</a></React.Fragment>),
+    "text": (<React.Fragment>Reminder: <strong>Jerry Cuares</strong> invited you to like <strong>Cuares Surveying Services</strong>. <br /><Link to="/">Accept</Link> or <Link to="/">Decline</Link></React.Fragment>),
     "date": "Aug 14 11:50pm",
     "status": "online"
   },
@@ -36,3 +39,4 @@ export default Notification = [
     "status": "online"
   }
 ];
+

@@ -84,7 +84,7 @@ class SidebarMenu extends Component {
                     {(!sm) ? (
                         <NavLink to={m.link} className="nav-link"><i className={m.icon}></i> <span>{m.label}</span></NavLink>
                     ) : (
-                        <Link onClick={this.toggleSubMenu} className="nav-link has-sub"><i className={m.icon}></i> <span>{m.label}</span></Link>
+                        <div onClick={this.toggleSubMenu} className="nav-link has-sub"><i className={m.icon}></i> <span>{m.label}</span></div>
                     )}
                     {m.submenu && <nav className="nav nav-sub">{sm}</nav>}
                 </li>
@@ -130,19 +130,19 @@ class SidebarMenu extends Component {
         return (
             <React.Fragment>
                 <div className="nav-group show">
-                    <Link className="nav-label" onClick={this.toggleMenu}>Dashboard</Link>
+                    <div className="nav-label" onClick={this.toggleMenu}>Dashboard</div>
                     {this.populateMenu(dashboardMenu)}
                 </div>
                 <div className="nav-group show">
-                    <Link className="nav-label" onClick={this.toggleMenu}>Applications</Link>
+                    <div className="nav-label" onClick={this.toggleMenu}>Applications</div>
                     {this.populateMenu(applicationsMenu)}
                 </div>
                 <div className="nav-group show">
-                    <Link className="nav-label" onClick={this.toggleMenu}>Pages</Link>
+                    <div className="nav-label" onClick={this.toggleMenu}>Pages</div>
                     {this.populateMenu(pagesMenu)}
                 </div>
                 <div className="nav-group show">
-                    <Link className="nav-label" onClick={this.toggleMenu}>UI Elements</Link>
+                    <div className="nav-label" onClick={this.toggleMenu}>UI Elements</div>
                     {this.populateMenu(uiElementsMenu)}
                 </div>
             </React.Fragment>

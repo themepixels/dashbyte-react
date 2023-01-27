@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
+import Main from './layouts/Main';
 import SalesMonitoring from "./dashboard/SalesMonitoring";
 import WebsiteAnalytics from "./dashboard/WebsiteAnalytics";
 import LayoutGrid from "./docs/LayoutGrid";
+import Signin from "./pages/Signin";
+import LayoutColumns from "./docs/LayoutColumns";
 
 // import css
 import "./assets/css/remixicon.css";
@@ -26,12 +28,14 @@ export default function App() {
     <React.Fragment>
       <BrowserRouter>
         <Routes>
-          <Route path="/">
-            <Route index element={<Home />} />
+          <Route path="/" element={<Main />}>
+            <Route path="dashboard" element={<SalesMonitoring />} />
             <Route path="dashboard/sales" element={<SalesMonitoring />} />
             <Route path="dashboard/analytics" element={<WebsiteAnalytics />} />
             <Route path="docs/layout/grid" element={<LayoutGrid />} />
+            <Route path="docs/layout/columns" element={<LayoutColumns />} />
           </Route>
+          <Route path="pages/signin" element={<Signin />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>
