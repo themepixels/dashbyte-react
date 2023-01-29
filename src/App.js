@@ -4,14 +4,18 @@ import Main from './layouts/Main';
 import SalesMonitoring from "./dashboard/SalesMonitoring";
 import WebsiteAnalytics from "./dashboard/WebsiteAnalytics";
 import LayoutGrid from "./docs/LayoutGrid";
-import Signin from "./pages/Signin";
 import LayoutColumns from "./docs/LayoutColumns";
+import NotFound from "./pages/NotFound";
+
+import publicRoutes from "./routes/PublicRoutes";
+import protectedRoutes from "./routes/ProtectedRoutes";
 
 // import css
 import "./assets/css/remixicon.css";
 
 // import scss
 import "./scss/style.scss";
+
 
 // set skin on load
 window.addEventListener("load", function () {
@@ -29,13 +33,26 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />}>
-            <Route path="dashboard" element={<SalesMonitoring />} />
-            <Route path="dashboard/sales" element={<SalesMonitoring />} />
-            <Route path="dashboard/analytics" element={<WebsiteAnalytics />} />
-            <Route path="docs/layout/grid" element={<LayoutGrid />} />
-            <Route path="docs/layout/columns" element={<LayoutColumns />} />
+            {protectedRoutes.map((route, index) => {
+              return (
+                <Route
+                  path={route.path}
+                  element={route.element}
+                  key={index}
+                />
+              )
+            })}
           </Route>
-          <Route path="pages/signin" element={<Signin />} />
+          {publicRoutes.map((route, index) => {
+            return (
+              <Route
+                path={route.path}
+                element={route.element}
+                key={index}
+              />
+            )
+          })}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>
