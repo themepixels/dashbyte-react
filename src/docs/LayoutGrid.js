@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Card, Row, Col, Container } from "react-bootstrap";
+import { Card, Row, Col, Container, Nav } from "react-bootstrap";
 import Prism from "prismjs";
 import HeaderMobile from "../layouts/HeaderMobile";
 import Footer from "../layouts/Footer";
@@ -131,14 +131,14 @@ export default function LayoutGrid() {
 
         </Container>
 
-        <nav id="navDocs" className="nav nav-docs">
+        <Nav id="navDocs" className="nav-docs">
           <label>On This Page</label>
           <a href="#section1" className="nav-link">How It Works</a>
           <a href="#section2" className="nav-link">Setting One Column Width</a>
           <a href="#section3" className="nav-link">Variable Width Content</a>
           <a href="#section4" className="nav-link">Stacked To Horizontal</a>
           <a href="#section5" className="nav-link">Row Columns</a>
-        </nav>
+        </Nav>
       </div>
       <Footer />
     </React.Fragment>
