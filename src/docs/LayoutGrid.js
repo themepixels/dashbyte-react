@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Container } from "react-bootstrap";
 import Prism from "prismjs";
 import HeaderMobile from "../layouts/HeaderMobile";
 import Footer from "../layouts/Footer";
@@ -12,7 +12,7 @@ export default function LayoutGrid() {
     <React.Fragment>
       <HeaderMobile />
       <div className="main main-docs">
-        <div className="container">
+        <Container>
           <label className="main-title-label">Getting Started</label>
           <h2 className="main-title">Grid System</h2>
           <p className="main-title-text">Use Bootstrap's powerful mobile-first flexbox grid to build layouts of all shapes and sizes.</p>
@@ -129,7 +129,7 @@ export default function LayoutGrid() {
 
           <br /><br /><br />
 
-        </div>
+        </Container>
 
         <nav id="navDocs" className="nav nav-docs">
           <label>On This Page</label>

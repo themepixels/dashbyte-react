@@ -213,7 +213,7 @@ const uiElementsMenu = [
         "submenu": [
           {
             "label": "Accordion",
-            "link": "/docs/com/accordion"
+            "link": "/docs/com/accordions"
           },
           {
             "label": "Alerts",
