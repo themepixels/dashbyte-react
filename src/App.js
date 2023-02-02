@@ -1,10 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from './layouts/Main';
-import SalesMonitoring from "./dashboard/SalesMonitoring";
-import WebsiteAnalytics from "./dashboard/WebsiteAnalytics";
-import LayoutGrid from "./docs/LayoutGrid";
-import LayoutColumns from "./docs/LayoutColumns";
 import NotFound from "./pages/NotFound";
 
 import publicRoutes from "./routes/PublicRoutes";
@@ -56,5 +52,6 @@ export default function App() {
         </Routes>
       </BrowserRouter>
     </React.Fragment>
+    
   );
 }

@@ -34,16 +34,28 @@
 }
 
 .header-logo {
-  font-size: 26px;
-  font-family: 'Oleo Script', sans-serif;
-  font-weight: 500;
+  font-size: 24px;
+  font-family: $ff-secondary;
+  font-weight: 600;
   display: inline-block;
   line-height: 1;
-  color: $primary;
+  color: $dark;
   letter-spacing: -.5px;
+  position: relative;
 
   &:hover,
-  &:focus { color: $primary; }
+  &:focus { color: $dark; }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 3.5px;
+    right: -8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: $primary;
+  }
 }
 
 .header-main {
@@ -169,6 +181,7 @@
 
   .dropdown-menu {
     width: 250px;
+    margin-right: 10px;
     padding: 20px;
     border-color: $border-color;
     border-radius: 6px;

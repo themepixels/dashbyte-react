@@ -23,7 +23,7 @@ export default function Badges() {
           <p>Add any of the below mentioned modifier classes to change the appearance of a badge.</p>
 
           <Card className="card-example">
-            <Card.Body className="d-flex gap-1">
+            <Card.Body className="d-flex flex-wrap gap-2">
               {[
                 'primary',
                 'secondary',
@@ -57,7 +57,7 @@ export default function Badges() {
           <p>Use the <code>pill</code> props to make badges more rounded.</p>
 
           <Card className="card-example">
-            <Card.Body className="d-flex gap-1">
+            <Card.Body className="d-flex flex-wrap gap-2">
               {[
                 'primary',
                 'secondary',
@@ -89,8 +89,8 @@ export default function Badges() {
 
         <Nav id="navDocs" className="nav-docs">
           <label>On This Page</label>
-          <a href="#section1" className="nav-link">Contextual Variations</a>
-          <a href="#section2" className="nav-link">Pill Badges</a>
+          <Nav.Link href="#section1">Contextual Variations</Nav.Link>
+          <Nav.Link href="#section2">Pill Badges</Nav.Link>
         </Nav>
       </div>
       <Footer />

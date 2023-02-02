@@ -229,11 +229,11 @@ export default function Accordions() {
 
         <Nav id="navDocs" className="nav-docs">
           <label>On This Page</label>
-          <a href="#section1" className="nav-link">Default Functionality</a>
-          <a href="#section2" className="nav-link">Accordion Flush</a>
-          <a href="#section3" className="nav-link">Always Open</a>
-          <a href="#section4" className="nav-link">Custom Style</a>
-          <a href="#section5" className="nav-link">Colored Variant</a>
+          <Nav.Link href="#section1">Default Functionality</Nav.Link>
+          <Nav.Link href="#section2">Accordion Flush</Nav.Link>
+          <Nav.Link href="#section3">Always Open</Nav.Link>
+          <Nav.Link href="#section4">Custom Style</Nav.Link>
+          <Nav.Link href="#section5">Colored Variant</Nav.Link>
         </Nav>
       </div>
 

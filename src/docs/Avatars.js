@@ -103,11 +103,11 @@ export default function Avatars() {
 
         <Nav id="navDocs" className="nav-docs">
           <label>On This Page</label>
-          <a href="#section1" className="nav-link">Default Functionality</a>
-          <a href="#section2" className="nav-link">Sizes</a>
-          <a href="#section3" className="nav-link">Shapes</a>
-          <a href="#section4" className="nav-link">Initials</a>
-          <a href="#section5" className="nav-link">Status Indicator</a>
+          <Nav.Link href="#section1">Default Functionality</Nav.Link>
+          <Nav.Link href="#section2">Sizes</Nav.Link>
+          <Nav.Link href="#section3">Shapes</Nav.Link>
+          <Nav.Link href="#section4">Initials</Nav.Link>
+          <Nav.Link href="#section5">Status Indicator</Nav.Link>
         </Nav>
       </div>
       <Footer />

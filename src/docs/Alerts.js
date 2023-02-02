@@ -220,13 +220,13 @@ export default function Alerts() {
 
         <Nav id="navDocs" className="nav-docs">
           <label>On This Page</label>
-          <a href="#section1" className="nav-link">Default Functionality</a>
-          <a href="#section2" className="nav-link">Alert Link</a>
-          <a href="#section3" className="nav-link">Additional Content</a>
-          <a href="#section4" className="nav-link">Dismissing</a>
-          <a href="#section5" className="nav-link">Outline Style</a>
-          <a href="#section6" className="nav-link">Solid Background</a>
-          <a href="#section7" className="nav-link">Alert With Icon</a>
+          <Nav.Link href="#section1">Default Functionality</Nav.Link>
+          <Nav.Link href="#section2">Alert Link</Nav.Link>
+          <Nav.Link href="#section3">Additional Content</Nav.Link>
+          <Nav.Link href="#section4">Dismissing</Nav.Link>
+          <Nav.Link href="#section5">Outline Style</Nav.Link>
+          <Nav.Link href="#section6">Solid Background</Nav.Link>
+          <Nav.Link href="#section7">Alert With Icon</Nav.Link>
         </Nav>
       </div>
       <Footer />

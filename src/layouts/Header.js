@@ -21,11 +21,15 @@ export default function Header() {
 
   const toggleSidebar = (e) => {
     e.preventDefault();
-    let isOffset = document.querySelector("body").classList.contains("sidebar-offset");
-    if(isOffset) {
-      document.querySelector("body").classList.toggle("sidebar-show");
+    let isOffset = document.body.classList.contains("sidebar-offset");
+    if (isOffset) {
+      document.body.classList.toggle("sidebar-show");
     } else {
-      document.querySelector("body").classList.toggle("sidebar-hide");
+      if (window.matchMedia("(max-width: 991px)").matches) {
+        document.body.classList.toggle("sidebar-show");
+      } else {
+        document.body.classList.toggle("sidebar-hide");
+      }
     }
   }
 
@@ -62,15 +66,15 @@ export default function Header() {
 
     let skin = e.target.textContent.toLowerCase();
     let HTMLTag = document.querySelector("html");
-    
-    if(skin === "dark") {
+
+    if (skin === "dark") {
       HTMLTag.setAttribute("data-skin", skin);
       localStorage.setItem('skin-mode', skin);
     } else {
       HTMLTag.removeAttribute("data-skin");
       localStorage.removeItem('skin-mode');
     }
-    
+
   };
 
   const sidebarSkin = (e) => {
@@ -89,7 +93,7 @@ export default function Header() {
 
     HTMLTag.removeAttribute("data-sidebar");
 
-    if(skin !== "default") {
+    if (skin !== "default") {
       HTMLTag.setAttribute("data-sidebar", skin);
       localStorage.setItem("sidebar-skin", skin);
     } else {
@@ -113,15 +117,15 @@ export default function Header() {
         <Dropdown.Menu className="mt-10-f">
           <label>Skin Mode</label>
           <nav className="nav nav-skin">
-            <Link onClick={skinMode} className={localStorage.getItem("skin-mode")? "nav-link" : "nav-link active"}>Light</Link>
-            <Link onClick={skinMode} className={localStorage.getItem("skin-mode")? "nav-link active" : "nav-link"}>Dark</Link>
+            <Link onClick={skinMode} className={localStorage.getItem("skin-mode") ? "nav-link" : "nav-link active"}>Light</Link>
+            <Link onClick={skinMode} className={localStorage.getItem("skin-mode") ? "nav-link active" : "nav-link"}>Dark</Link>
           </nav>
           <hr />
           <label>Sidebar Skin</label>
           <nav id="sidebarSkin" className="nav nav-skin">
-            <Link onClick={sidebarSkin} className={!(localStorage.getItem("sidebar-skin"))? "nav-link active" : "nav-link"}>Default</Link>
-            <Link onClick={sidebarSkin} className={(localStorage.getItem("sidebar-skin") === "prime")? "nav-link active" : "nav-link"}>Prime</Link>
-            <Link onClick={sidebarSkin} className={(localStorage.getItem("sidebar-skin") === "dark")? "nav-link active" : "nav-link"}>Dark</Link>
+            <Link onClick={sidebarSkin} className={!(localStorage.getItem("sidebar-skin")) ? "nav-link active" : "nav-link"}>Default</Link>
+            <Link onClick={sidebarSkin} className={(localStorage.getItem("sidebar-skin") === "prime") ? "nav-link active" : "nav-link"}>Prime</Link>
+            <Link onClick={sidebarSkin} className={(localStorage.getItem("sidebar-skin") === "dark") ? "nav-link active" : "nav-link"}>Dark</Link>
           </nav>
         </Dropdown.Menu>
       </Dropdown>

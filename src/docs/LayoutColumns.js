@@ -246,13 +246,13 @@ export default function LayoutColumns() {
 
         <Nav id="navDocs" className="nav-docs">
           <label>On This Page</label>
-          <a href="#section1" className="nav-link">Vertical Alignment</a>
-          <a href="#section2" className="nav-link">Horizontal Alignment</a>
-          <a href="#section3" className="nav-link">Column Breaks</a>
-          <a href="#section4" className="nav-link">Reordering</a>
-          <a href="#section5" className="nav-link">Offsetting Columns</a>
-          <a href="#section6" className="nav-link">Margin Utilities</a>
-          <a href="#section7" className="nav-link">Standalone Column</a>
+          <Nav.Link href="#section1">Vertical Alignment</Nav.Link>
+          <Nav.Link href="#section2">Horizontal Alignment</Nav.Link>
+          <Nav.Link href="#section3">Column Breaks</Nav.Link>
+          <Nav.Link href="#section4">Reordering</Nav.Link>
+          <Nav.Link href="#section5">Offsetting Columns</Nav.Link>
+          <Nav.Link href="#section6">Margin Utilities</Nav.Link>
+          <Nav.Link href="#section7">Standalone Column</Nav.Link>
         </Nav>
       </div>
 

@@ -133,11 +133,11 @@ export default function LayoutGrid() {
 
         <Nav id="navDocs" className="nav-docs">
           <label>On This Page</label>
-          <a href="#section1" className="nav-link">How It Works</a>
-          <a href="#section2" className="nav-link">Setting One Column Width</a>
-          <a href="#section3" className="nav-link">Variable Width Content</a>
-          <a href="#section4" className="nav-link">Stacked To Horizontal</a>
-          <a href="#section5" className="nav-link">Row Columns</a>
+          <Nav.Link href="#section1">How It Works</Nav.Link>
+          <Nav.Link href="#section2">Setting One Column Width</Nav.Link>
+          <Nav.Link href="#section3">Variable Width Content</Nav.Link>
+          <Nav.Link href="#section4">Stacked To Horizontal</Nav.Link>
+          <Nav.Link href="#section5">Row Columns</Nav.Link>
         </Nav>
       </div>
       <Footer />

@@ -118,10 +118,10 @@ export default function LayoutGutters() {
 
         <Nav id="navDocs" className="nav-docs">
           <label>On This Page</label>
-          <a href="#section1" className="nav-link">Horizontal Gutters</a>
-          <a href="#section2" className="nav-link">Vertical Gutters</a>
-          <a href="#section3" className="nav-link">Vertical &amp; Horizontal Gutters</a>
-          <a href="#section4" className="nav-link">No Gutters</a>
+          <Nav.Link href="#section1">Horizontal Gutters</Nav.Link>
+          <Nav.Link href="#section2">Vertical Gutters</Nav.Link>
+          <Nav.Link href="#section3">Vertical &amp; Horizontal Gutters</Nav.Link>
+          <Nav.Link href="#section4">No Gutters</Nav.Link>
         </Nav>
 
       </div>

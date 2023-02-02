@@ -21,7 +21,7 @@ export default Notification = [
     "status": "online"
   },
   {
-    "avatar": (<span class="avatar-initial bg-primary">a</span>),
+    "avatar": (<span className="avatar-initial bg-primary">a</span>),
     "text": (<React.Fragment>New listings were added that match your search alert <strong>house for rent</strong></React.Fragment>),
     "date": "Aug 15 08:10pm",
     "status": ""

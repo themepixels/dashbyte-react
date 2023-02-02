@@ -213,10 +213,11 @@
 
   .animate-title {
     font-size: 36px;
-    font-family: 'Oleo Script', cursive;
+    font-weight: 600;
+    font-family: $ff-secondary;
     display: inline-block;
     line-height: 1;
-    color: $primary;
+    color: $dark;
     letter-spacing: -1px;
     text-shadow: 3px 3px 2px $gray-400;
   }

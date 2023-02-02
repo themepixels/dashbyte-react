@@ -10,17 +10,6 @@ import {
 } from "../data/Menu";
 
 export default class Sidebar extends Component {
-    constructor(props) {
-        super(props);
-
-        // toggle sidebar offset if offset is set to true
-        if (this.props.offset) {
-            document.querySelector("body").classList.add("sidebar-offset");
-        } else {
-            document.querySelector("body").classList.remove("sidebar-offset", "sidebar-show");
-        }
-    }
-
     toggleFooterMenu = (e) => {
         e.preventDefault();
 
