@@ -12,11 +12,16 @@
   .page-item {
     &.disabled .page-link { background-color: $gray-100; }
     &:not(.active) .page-link:hover { background-color: $gray-200; }
+
+    &.active .page-link {
+      background-color: $primary;
+      color: #fff;
+    }
   }
 
   .page-link {
     border-width: 0;
-    background-color: rgba($gray-200, .6);
+    background-color: $gray-200;
     color: $secondary;
   }
 }

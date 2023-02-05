@@ -264,7 +264,7 @@ const uiElementsMenu = [
         "link": "/docs/com/modal"
       },
       {
-        "label": "Nav &amp; Tabs",
+        "label": "Nav & Tabs",
         "link": "/docs/com/navtabs"
       },
       {
@@ -286,10 +286,6 @@ const uiElementsMenu = [
       {
         "label": "Progress",
         "link": "/docs/com/progress"
-      },
-      {
-        "label": "Scrollspy",
-        "link": "/docs/com/scrollspy"
       },
       {
         "label": "Spinners",
@@ -322,11 +318,11 @@ const uiElementsMenu = [
         "link": "/docs/form/selects"
       },
       {
-        "label": "Checks &amp; Radios",
+        "label": "Checks & Radios",
         "link": "/docs/form/checksradios"
       },
       {
-        "label": "Tags &amp; Masks",
+        "label": "Tags & Masks",
         "link": "/docs/form/tagsmasks"
       },
       {

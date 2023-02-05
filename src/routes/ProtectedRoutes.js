@@ -17,6 +17,21 @@ import Buttons from "../docs/Buttons";
 import Cards from "../docs/Cards";
 import Carousels from "../docs/Carousels";
 import Dropdowns from "../docs/Dropdowns";
+import Images from "../docs/Images";
+import Listgroup from "../docs/Listgroup";
+import Markers from "../docs/Markers";
+import Modals from "../docs/Modals";
+import NavTabs from "../docs/NavTabs";
+import OffCanvas from "../docs/OffCanvas";
+import Paginations from "../docs/Paginations";
+import Placeholders from "../docs/Placeholders";
+import Popovers from "../docs/Popovers";
+import Progress from "../docs/Progress";
+import Spinners from "../docs/Spinners";
+import Toasts from "../docs/Toasts";
+import Tooltips from "../docs/Tooltips";
+import Tables from "../docs/Tables";
+import FormElements from "../docs/FormElements";
 
 const protectedRoutes = [
   { path: "dashboard/sales", element: <SalesMonitoring /> },
@@ -28,11 +43,26 @@ const protectedRoutes = [
   { path: "docs/com/alerts", element: <Alerts /> },
   { path: "docs/com/avatars", element: <Avatars /> },
   { path: "docs/com/badge", element: <Badges /> },
-  { path: "docs/com/breadcrumbs", element: <Breadcrumbs/> },
-  { path: "docs/com/buttons", element: <Buttons/> },
-  { path: "docs/com/cards", element: <Cards/> },
-  { path: "docs/com/carousel", element: <Carousels/> },
-  { path: "docs/com/dropdown", element: <Dropdowns/> }
+  { path: "docs/com/breadcrumbs", element: <Breadcrumbs /> },
+  { path: "docs/com/buttons", element: <Buttons /> },
+  { path: "docs/com/cards", element: <Cards /> },
+  { path: "docs/com/carousel", element: <Carousels /> },
+  { path: "docs/com/dropdown", element: <Dropdowns /> },
+  { path: "docs/com/images", element: <Images /> },
+  { path: "docs/com/listgroup", element: <Listgroup /> },
+  { path: "docs/com/markers", element: <Markers /> },
+  { path: "docs/com/modal", element: <Modals /> },
+  { path: "docs/com/navtabs", element: <NavTabs /> },
+  { path: "docs/com/offcanvas", element: <OffCanvas /> },
+  { path: "docs/com/pagination", element: <Paginations /> },
+  { path: "docs/com/placeholders", element: <Placeholders /> },
+  { path: "docs/com/popovers", element: <Popovers /> },
+  { path: "docs/com/progress", element: <Progress /> },
+  { path: "docs/com/spinners", element: <Spinners /> },
+  { path: "docs/com/toasts", element: <Toasts /> },
+  { path: "docs/com/tooltips", element: <Tooltips /> },
+  { path: "docs/com/tables", element: <Tables /> },
+  { path: "docs/form/elements", element: <FormElements /> }
 ]
 
 export default protectedRoutes;

@@ -28,6 +28,10 @@
       background-color: $dark-highlight;
       border-top-color: $border-color-dark;
 
+      pre { 
+        background-color: inherit !important; 
+      }
+
       code {
         text-shadow: none;
         color: #fff;

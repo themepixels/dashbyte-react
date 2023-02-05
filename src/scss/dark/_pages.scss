@@ -121,6 +121,8 @@
     &.d-block .col-wrapper {
       background-color: lighten($dark-highlight, 3%);
     }
+
+    .header-logo { color: #fff; }
   }
 
   .card-sign {
@@ -139,6 +141,7 @@
   }
 
   ////////// Error Pages //////////
+  .page-error .header-logo { color: #fff; }
   .error-title { color: #fff; }
   .error-number { color: #fff; }
   .error-text { color: inherit; }

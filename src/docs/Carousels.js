@@ -220,9 +220,9 @@ export default function Carousels() {
 
         <Nav id="navDocs" className="nav-docs">
           <label>On This Page</label>
-          <Nav.Link href="#section1" className="nav-link">Basic Example</Nav.Link>
-          <Nav.Link href="#section2" className="nav-link">Crossfade</Nav.Link>
-          <Nav.Link href="#section3" className="nav-link">No transition animation</Nav.Link>
+          <Nav.Link href="#section1">Basic Example</Nav.Link>
+          <Nav.Link href="#section2">Crossfade</Nav.Link>
+          <Nav.Link href="#section3">No transition animation</Nav.Link>
         </Nav>
       </div>
       <Footer />
