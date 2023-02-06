@@ -322,10 +322,6 @@ const uiElementsMenu = [
         "link": "/docs/form/checksradios"
       },
       {
-        "label": "Tags & Masks",
-        "link": "/docs/form/tagsmasks"
-      },
-      {
         "label": "Range",
         "link": "/docs/form/range"
       },
@@ -334,16 +330,8 @@ const uiElementsMenu = [
         "link": "/docs/form/pickers"
       },
       {
-        "label": "Wizards",
-        "link": "/docs/form/wizards"
-      },
-      {
         "label": "Layouts",
         "link": "/docs/form/layouts"
-      },
-      {
-        "label": "Validation",
-        "link": "/docs/form/validation"
       },
       {
         "label": "Editors",
@@ -399,10 +387,6 @@ const uiElementsMenu = [
     "label": "Utilities",
     "icon": "ri-briefcase-4-line",
     "submenu": [
-      {
-        "label": "Animation",
-        "link": "/docs/util/animation"
-      },
       {
         "label": "Background",
         "link": "/docs/util/background"

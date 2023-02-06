@@ -32,6 +32,24 @@ import Toasts from "../docs/Toasts";
 import Tooltips from "../docs/Tooltips";
 import Tables from "../docs/Tables";
 import FormElements from "../docs/FormElements";
+import FormSelects from "../docs/FormSelects";
+import FormChecksRadios from "../docs/FormChecksRadios";
+import FormRange from "../docs/FormRange";
+import FormPickers from "../docs/FormPickers";
+import FormLayouts from "../docs/FormLayouts";
+import FormEditors from "../docs/FormEditors";
+import UtilBackground from "../docs/UtilBackground";
+import UtilBorder from "../docs/UtilBorder";
+import UtilColors from "../docs/UtilColors";
+import UtilDivider from "../docs/UtilDivider";
+import UtilFlex from "../docs/UtilFlex";
+import UtilSizing from "../docs/UtilSizing";
+import UtilSpacing from "../docs/UtilSpacing";
+import UtilOpacity from "../docs/UtilOpacity";
+import UtilPosition from "../docs/UtilPosition";
+import UtilTypography from "../docs/UtilTypography";
+import UtilShadows from "../docs/UtilShadows";
+import UtilExtras from "../docs/UtilExtras";
 
 const protectedRoutes = [
   { path: "dashboard/sales", element: <SalesMonitoring /> },
@@ -62,7 +80,25 @@ const protectedRoutes = [
   { path: "docs/com/toasts", element: <Toasts /> },
   { path: "docs/com/tooltips", element: <Tooltips /> },
   { path: "docs/com/tables", element: <Tables /> },
-  { path: "docs/form/elements", element: <FormElements /> }
+  { path: "docs/form/elements", element: <FormElements /> },
+  { path: "docs/form/selects", element: <FormSelects /> },
+  { path: "docs/form/checksradios", element: <FormChecksRadios /> },
+  { path: "docs/form/range", element: <FormRange /> },
+  { path: "docs/form/pickers", element: <FormPickers /> },
+  { path: "docs/form/layouts", element: <FormLayouts /> },
+  { path: "docs/form/editors", element: <FormEditors /> },
+  { path: "docs/util/background", element: <UtilBackground /> },
+  { path: "docs/util/border", element: <UtilBorder /> },
+  { path: "docs/util/colors", element: <UtilColors /> },
+  { path: "docs/util/divider", element: <UtilDivider /> },
+  { path: "docs/util/flex", element: <UtilFlex /> },
+  { path: "docs/util/sizing", element: <UtilSizing /> },
+  { path: "docs/util/spacing", element: <UtilSpacing /> },
+  { path: "docs/util/opacity", element: <UtilOpacity /> },
+  { path: "docs/util/position", element: <UtilPosition /> },
+  { path: "docs/util/typography", element: <UtilTypography /> },
+  { path: "docs/util/shadows", element: <UtilShadows /> },
+  { path: "docs/util/extras", element: <UtilExtras /> }
 ]
 
 export default protectedRoutes;
