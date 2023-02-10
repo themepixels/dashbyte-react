@@ -55,6 +55,8 @@ import MapLeaflet from "../docs/MapLeaflet";
 import MapVector from "../docs/MapVector";
 import IconRemix from "../docs/IconRemix";
 import IconFeather from "../docs/IconFeather";
+import Pricing from "../pages/Pricing";
+import Faq from "../pages/Faq";
 
 const protectedRoutes = [
   { path: "dashboard/sales", element: <SalesMonitoring /> },
@@ -108,7 +110,9 @@ const protectedRoutes = [
   { path: "docs/map/leaflet", element: <MapLeaflet /> },
   { path: "docs/map/vector", element: <MapVector /> },
   { path: "docs/icon/remix", element: <IconRemix /> },
-  { path: "docs/icon/feather", element: <IconFeather /> }
+  { path: "docs/icon/feather", element: <IconFeather /> },
+  { path: "pages/pricing", element: <Pricing /> },
+  { path: "pages/faq", element: <Faq /> }
 ]
 
 export default protectedRoutes;

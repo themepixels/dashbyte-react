@@ -18,7 +18,7 @@ export default function IconFeather() {
         <Container>
           <label className="main-title-label">Maps and Icons</label>
           <h2 className="main-title">Feathericons</h2>
-          <p className="main-title-text">Feather is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and usability. Read the <a href="https://feathericons.com/" target="_blank">Official Feathericons Website</a> for new updates, instructions and other options.</p>
+          <p className="main-title-text">Feather is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and usability.</p>
 
           <hr className="main-separator" />
 
