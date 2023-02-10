@@ -15,7 +15,7 @@ export default function Popovers() {
         <Container>
           <label className="main-title-label">Components</label>
           <h2 className="main-title">Popovers</h2>
-          <p className="main-title-text">Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site. Read the <a href="https://getbootstrap.com/docs/5.1/components/popovers/" target="_blank">Official Bootstrap Documentation</a> for a full list of instructions and other options.</p>
+          <p className="main-title-text">Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
 
           <hr className="main-separator" />
 

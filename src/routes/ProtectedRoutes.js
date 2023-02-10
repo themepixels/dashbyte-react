@@ -50,6 +50,11 @@ import UtilPosition from "../docs/UtilPosition";
 import UtilTypography from "../docs/UtilTypography";
 import UtilShadows from "../docs/UtilShadows";
 import UtilExtras from "../docs/UtilExtras";
+import ChartJs from "../docs/ChartJs";
+import MapLeaflet from "../docs/MapLeaflet";
+import MapVector from "../docs/MapVector";
+import IconRemix from "../docs/IconRemix";
+import IconFeather from "../docs/IconFeather";
 
 const protectedRoutes = [
   { path: "dashboard/sales", element: <SalesMonitoring /> },
@@ -98,7 +103,12 @@ const protectedRoutes = [
   { path: "docs/util/position", element: <UtilPosition /> },
   { path: "docs/util/typography", element: <UtilTypography /> },
   { path: "docs/util/shadows", element: <UtilShadows /> },
-  { path: "docs/util/extras", element: <UtilExtras /> }
+  { path: "docs/util/extras", element: <UtilExtras /> },
+  { path: "docs/chart/chartjs", element: <ChartJs /> },
+  { path: "docs/map/leaflet", element: <MapLeaflet /> },
+  { path: "docs/map/vector", element: <MapVector /> },
+  { path: "docs/icon/remix", element: <IconRemix /> },
+  { path: "docs/icon/feather", element: <IconFeather /> }
 ]
 
 export default protectedRoutes;

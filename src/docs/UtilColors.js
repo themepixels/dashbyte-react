@@ -3,6 +3,7 @@ import Prism from "prismjs";
 import { Card, Container, Nav } from "react-bootstrap";
 import Footer from "../layouts/Footer";
 import HeaderMobile from "../layouts/HeaderMobile";
+import { Link } from "react-router-dom";
 
 export default function UtilColors() {
   useEffect(() => {
@@ -53,23 +54,23 @@ export default function UtilColors() {
           <Card className="card-example">
             <Card.Body>
               <div className="demo-text">
-                <a href="#" className="link-primary">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-                <a href="#" className="link-secondary">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-                <a href="#" className="link-success">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-                <a href="#" className="link-warning">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-                <a href="#" className="link-danger">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-                <a href="#" className="link-info">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-                <a href="#" className="link-dark">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
+                <Link className="link-primary">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+                <Link className="link-secondary">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+                <Link className="link-success">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+                <Link className="link-warning">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+                <Link className="link-danger">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+                <Link className="link-info">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+                <Link className="link-dark">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
               </div>
             </Card.Body>
             <Card.Footer>
-              <pre><code className="language-html">{`<a href="#" className="link-primary">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-<a href="#" className="link-secondary">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-<a href="#" className="link-success">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-<a href="#" className="link-warning">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-<a href="#" className="link-danger">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-<a href="#" className="link-info">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>
-<a href="#" className="link-dark">Seeing a spider in my room isn't scary. It's scary when it disappears.</a>`}</code></pre>
+              <pre><code className="language-html">{`<Link className="link-primary">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+<Link className="link-secondary">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+<Link className="link-success">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+<Link className="link-warning">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+<Link className="link-danger">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+<Link className="link-info">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>
+<Link className="link-dark">Seeing a spider in my room isn't scary. It's scary when it disappears.</Link>`}</code></pre>
             </Card.Footer>
           </Card>
 

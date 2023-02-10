@@ -3,6 +3,7 @@ import Prism from "prismjs";
 import { Card, Container, Nav } from "react-bootstrap";
 import Footer from "../layouts/Footer";
 import HeaderMobile from "../layouts/HeaderMobile";
+import { Link } from "react-router-dom";
 
 export default function UtilTypography() {
   useEffect(() => {
@@ -146,7 +147,7 @@ export default function UtilTypography() {
             <Card.Body>
               <p className="text-decoration-underline">This text has a line underneath it.</p>
               <p className="text-decoration-line-through">This text has a line going through it.</p>
-              <a href="#" className="text-decoration-none">This link has its text decoration removed</a>
+              <Link to="#" className="text-decoration-none">This link has its text decoration removed</Link>
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<p className="text-decoration-underline">This text has a line underneath it.</p>

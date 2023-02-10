@@ -188,7 +188,7 @@ export default function FormSelects() {
 
           <hr />
 
-          <label>Select 2</label>
+          <label>React Select</label>
           <Nav.Link href="#section4">Basic Usage</Nav.Link>
           <Nav.Link href="#section5">With Search</Nav.Link>
           <Nav.Link href="#section6">Disabled</Nav.Link>

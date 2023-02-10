@@ -214,7 +214,7 @@ export default function FormPickers() {
           <br /><br /><br />
 
           <h5 id="section5" className="main-subtitle">React Color</h5>
-          <p>A Collection of Color Pickers from Sketch, Photoshop, Chrome, Github, Twitter, Material Design & more. To learn more about this plugin, go to <a href="https://casesandberg.github.io/react-color/" target="_blank">https://casesandberg.github.io/react-color/</a></p>
+          <p>A Collection of Color Pickers from Sketch, Photoshop, Chrome, Github, Twitter, Material Design & more. To learn more about this plugin, go to <a href="https://casesandberg.github.io/react-color/" target="_blank" rel="noreferrer">https://casesandberg.github.io/react-color/</a></p>
 
           <Card className="card-example">
             <Card.Body>

@@ -5,6 +5,9 @@
   .nav-item {
     &.show {
       .nav-link {
+        color: $primary;
+        font-weight: $font-weight-medium;
+        
         &::after { content: '\EA4E'; }
       }
 

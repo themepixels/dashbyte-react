@@ -8,6 +8,7 @@ export default function FormElements() {
   useEffect(() => {
     Prism.highlightAll();
   }, []);
+
   return (
     <React.Fragment>
       <HeaderMobile />
@@ -25,21 +26,21 @@ export default function FormElements() {
           <Card className="card-example">
             <Card.Body>
               <div className="mb-3">
-                <Form.Label for="exampleFormControlInput1">Email address</Form.Label>
+                <Form.Label htmlFor="exampleFormControlInput1">Email address</Form.Label>
                 <Form.Control type="email" id="exampleFormControlInput1" placeholder="name@example.com" />
               </div>
               <div>
-                <Form.Label for="exampleFormControlTextarea1">Message</Form.Label>
+                <Form.Label htmlFor="exampleFormControlTextarea1">Message</Form.Label>
                 <Form.Control as="textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Enter message here..."></Form.Control>
               </div>
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<div className="mb-3">
-  <Form.Label for="exampleFormControlInput1">Email address</Form.Label>
+  <Form.Label htmlFor="exampleFormControlInput1">Email address</Form.Label>
   <Form.Control type="email" id="exampleFormControlInput1" placeholder="name@example.com" />
 </div>
 <div>
-  <Form.Label for="exampleFormControlTextarea1">Message</Form.Label>
+  <Form.Label htmlFor="exampleFormControlTextarea1">Message</Form.Label>
   <Form.Control as="textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Enter message here..."></Form.Control>
 </div>`}</code></pre>
             </Card.Footer>
@@ -71,11 +72,11 @@ export default function FormElements() {
           <Card className="card-example">
             <Card.Body>
               <Form.Control className="mb-2" type="text" placeholder="Disabled input" disabled />
-              <Form.Control type="text" value="Disabled readonly input" disabled readonly />
+              <Form.Control type="text" value="Disabled readonly input" onChange={() => {}} disabled readOnly />
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<Form.Control className="mb-2" type="text" placeholder="Disabled input" disabled />
-<Form.Control type="text" value="Disabled readonly input" disabled readonly />`}</code></pre>
+<Form.Control type="text" value="Disabled readonly input" disabled readOnly />`}</code></pre>
             </Card.Footer>
           </Card>
 
@@ -86,10 +87,10 @@ export default function FormElements() {
 
           <Card className="card-example">
             <Card.Body>
-              <Form.Control type="text" value="Readonly input" readonly />
+              <Form.Control type="text" value="Readonly input" onChange={() => {}} readOnly />
             </Card.Body>
             <Card.Footer>
-              <pre><code className="language-html">{`<Form.Control type="text" value="Readonly input" readonly />`}</code></pre>
+              <pre><code className="language-html">{`<Form.Control type="text" value="Readonly input" readOnly />`}</code></pre>
             </Card.Footer>
           </Card>
 

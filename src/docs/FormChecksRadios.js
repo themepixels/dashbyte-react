@@ -25,7 +25,7 @@ export default function FormChecksRadios() {
           <Card className="card-example mb-4">
             <Card.Body>
               <Form.Check type="checkbox" label="Default checkbox" />
-              <Form.Check type="checkbox" checked label="Checked checkbox" />
+              <Form.Check type="checkbox" checked label="Checked checkbox" onChange={() => {}} />
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<Form.Check type="checkbox" label="Default checkbox" />
@@ -38,7 +38,7 @@ export default function FormChecksRadios() {
           <Card className="card-example">
             <Card.Body>
               <Form.Check type="checkbox" label="Default checkbox" disabled />
-              <Form.Check type="checkbox" checked label="Checked checkbox" disabled />
+              <Form.Check type="checkbox" checked label="Checked checkbox" disabled onChange={() => {}} />
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<Form.Check type="checkbox" label="Default checkbox" disabled />
@@ -54,7 +54,7 @@ export default function FormChecksRadios() {
           <Card className="card-example mb-4">
             <Card.Body>
               <Form.Check type="radio" label="Default radio" />
-              <Form.Check type="radio" checked label="Checked radio" />
+              <Form.Check type="radio" checked label="Checked radio" onChange={() => {}} />
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<Form.Check type="radio" label="Default radio" />
@@ -67,7 +67,7 @@ export default function FormChecksRadios() {
           <Card className="card-example">
             <Card.Body>
               <Form.Check type="radio" label="Default radio" disabled />
-              <Form.Check type="radio" checked label="Checked radio" disabled />
+              <Form.Check type="radio" checked label="Checked radio" disabled onChange={() => {}}/>
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<Form.Check type="radio" label="Default radio" disabled />
@@ -83,7 +83,7 @@ export default function FormChecksRadios() {
           <Card className="card-example">
             <Card.Body>
               <Form.Check type="switch" label="Default switch" />
-              <Form.Check type="switch" checked label="Switch on" />
+              <Form.Check type="switch" checked label="Switch on" onChange={() => {}} />
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<Form.Check type="switch" label="Default switch" />
@@ -94,7 +94,7 @@ export default function FormChecksRadios() {
           <Card className="card-example">
             <Card.Body>
               <Form.Check type="switch" label="Default switch" disabled />
-              <Form.Check type="switch" checked label="Switch on" disabled />
+              <Form.Check type="switch" checked label="Switch on" disabled onChange={() => {}} />
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<Form.Check type="switch" label="Default switch" disabled />

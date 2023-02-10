@@ -15,7 +15,7 @@ export default function UtilPosition() {
         <Container>
           <label className="main-title-label">Utilities</label>
           <h2 className="main-title">Position</h2>
-          <p className="main-title-text">Use these shorthand utilities for quickly configuring the position of an element. Read the <a href="https://getbootstrap.com/docs/5.1/utilities/position/" target="_blank">Official Bootstrap Documentation</a> for a full list of instructions and other options.</p>
+          <p className="main-title-text">Use these shorthand utilities for quickly configuring the position of an element.</p>
 
           <hr className="main-separator" />
 

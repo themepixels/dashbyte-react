@@ -39,7 +39,7 @@ export default function UtilShadows() {
         </Container>
         <Nav id="navDocs" className="nav-docs">
           <label>On This Page</label>
-          <a href="#section1" className="nav-link">Basic Example</a>
+          <Nav.Link href="#section1" className="nav-link">Basic Example</Nav.Link>
         </Nav>
       </div>
       <Footer />

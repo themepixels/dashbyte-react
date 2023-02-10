@@ -108,8 +108,8 @@ export default function Markers() {
               </Row>
             </Card.Body>
             <Card.Footer>
-              <pre><code className="language-html">{`<div className="marker-icon top-left"><i className="ri-star-line"></i></div>
-<div className="marker-icon bottom-right"><i className="ri-star-line"></i></div>`}</code></pre>
+              <pre><code className="language-html">{`<div className="marker-icon top-left"><i className="ri-star-line"></i></Col>
+<div className="marker-icon bottom-right"><i className="ri-star-line"></i></Col>`}</code></pre>
             </Card.Footer>
           </Card>
 
@@ -171,7 +171,7 @@ export default function Markers() {
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<div className="marker marker-primary top-left">Primary</div>
-<div className="marker-icon marker-danger top-left"><i className="ri-star-line"></i></div>
+<div className="marker-icon marker-danger top-left"><i className="ri-star-line"></i></Col>
 <div className="marker-ribbon marker-success top-left">Success</div>`}</code></pre>
             </Card.Footer>
           </Card>

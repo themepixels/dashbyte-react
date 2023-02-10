@@ -30,7 +30,7 @@ export default function NotFound() {
               <Link to="/dashboard/sales" className="btn btn-primary btn-error">Back to Dashboard</Link>
             </Col>
             <Col xs="8" lg="6" className="mb-5 mb-lg-0">
-              <object type="image/svg+xml" data={pageSvg} width="100%"></object>
+              <object type="image/svg+xml" data={pageSvg} className="w-100" aria-label="svg image"></object>
             </Col>
           </Row>
         </Container>

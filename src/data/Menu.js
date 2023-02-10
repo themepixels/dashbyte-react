@@ -344,20 +344,12 @@ const uiElementsMenu = [
     "icon": "ri-bar-chart-2-line",
     "submenu": [
       {
-        "label": "Flot",
-        "link": "/docs/chart/flot"
+        "label": "ApexCharts",
+        "link": "/docs/chart/apex"
       },
       {
         "label": "Chartjs",
         "link": "/docs/chart/chartjs"
-      },
-      {
-        "label": "Peity",
-        "link": "/docs/chart/peity"
-      },
-      {
-        "label": "Morris",
-        "link": "/docs/chart/morris"
       }
     ]
   },

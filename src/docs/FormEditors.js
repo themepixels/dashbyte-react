@@ -12,7 +12,8 @@ export default function FormEditors() {
     Prism.highlightAll();
   }, []);
 
-  const [value, setValue] = useState('');
+  const [setValue] = useState('');
+  
   return (
     <React.Fragment>
       <HeaderMobile />

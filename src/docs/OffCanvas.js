@@ -4,8 +4,6 @@ import { Card, Container, Nav, Offcanvas, Button } from "react-bootstrap";
 import Footer from "../layouts/Footer";
 import HeaderMobile from "../layouts/HeaderMobile";
 
-import img2 from "../assets/img/img2.jpg";
-
 export default function OffCanvas() {
   useEffect(() => {
     Prism.highlightAll();

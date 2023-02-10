@@ -25,21 +25,21 @@ export default function FormLayouts() {
           <Card className="card-example">
             <Card.Body>
               <div className="mb-3">
-                <Form.Label for="formGroupExampleInput">Example label</Form.Label>
+                <Form.Label htmlFor="formGroupExampleInput">Example label</Form.Label>
                 <Form.Control type="text" id="formGroupExampleInput" placeholder="Example input placeholder" />
               </div>
               <div>
-                <Form.Label for="formGroupExampleInput2">Another label</Form.Label>
+                <Form.Label htmlFor="formGroupExampleInput2">Another label</Form.Label>
                 <Form.Control type="text" id="formGroupExampleInput2" placeholder="Another input placeholder" />
               </div>
             </Card.Body>
             <Card.Footer>
               <pre><code className="language-html">{`<div className="mb-3">
-  <Form.Label for="formGroupExampleInput">Example label</Form.Label>
+  <Form.Label htmlFor="formGroupExampleInput">Example label</Form.Label>
   <Form.Control type="text" id="formGroupExampleInput" placeholder="Example input placeholder" />
 </div>
 <div>
-  <Form.Label for="formGroupExampleInput2">Another label</Form.Label>
+  <Form.Label htmlFor="formGroupExampleInput2">Another label</Form.Label>
   <Form.Control type="text" id="formGroupExampleInput2" placeholder="Another input placeholder" />
 </div>`}</code></pre>
             </Card.Footer>
@@ -110,13 +110,13 @@ export default function FormLayouts() {
             <Card.Body>
               <Form>
                 <Row className="mb-3">
-                  <Form.Label for="inputEmail3" className="col-sm-2 col-form-label">Email</Form.Label>
+                  <Form.Label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</Form.Label>
                   <Col sm="10">
                     <Form.Control type="email" id="inputEmail3" />
                   </Col>
                 </Row>
                 <Row className="mb-3">
-                  <Form.Label for="inputPassword3" className="col-sm-2 col-form-label">Password</Form.Label>
+                  <Form.Label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</Form.Label>
                   <Col sm="10">
                     <Form.Control type="password" id="inputPassword3" />
                   </Col>
@@ -124,7 +124,7 @@ export default function FormLayouts() {
                 <Row as="fieldset" className="mb-3">
                   <legend className="col-form-label col-sm-2 pt-0">Radios</legend>
                   <Col sm="10">
-                    <Form.Check type="radio" name="gridRadios" id="gridRadios1" value="option1" label="First radio" checked />
+                    <Form.Check type="radio" name="gridRadios" id="gridRadios1" value="option1" label="First radio" checked onChange={() => {}} />
                     <Form.Check type="radio" name="gridRadios" id="gridRadios2" value="option2" label="Second radio" />
                     <Form.Check type="radio" name="gridRadios" id="gridRadios3" value="option3" label="Third disabled radio" disabled />
                   </Col>
@@ -140,13 +140,13 @@ export default function FormLayouts() {
             <Card.Footer>
               <pre><code className="language-html">{`<Form>
   <Row className="mb-3">
-    <Form.Label for="inputEmail3" className="col-sm-2 col-form-label">Email</Form.Label>
+    <Form.Label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</Form.Label>
     <Col sm="10">
       <Form.Control type="email" id="inputEmail3" />
     </Col>
   </Row>
   <Row className="mb-3">
-    <Form.Label for="inputPassword3" className="col-sm-2 col-form-label">Password</Form.Label>
+    <Form.Label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</Form.Label>
     <Col sm="10">
       <Form.Control type="password" id="inputPassword3" />
     </Col>
