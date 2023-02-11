@@ -10,7 +10,9 @@
 
     .header-main,
     .main-mobile-header,
-    .main { transform: translateX($sidebar-width + 40px); }
+    .main { 
+      transform: translateX($sidebar-width + 40px); 
+    }
 
     .main-backdrop {
       opacity: 1;

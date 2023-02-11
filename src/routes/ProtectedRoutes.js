@@ -57,6 +57,8 @@ import IconRemix from "../docs/IconRemix";
 import IconFeather from "../docs/IconFeather";
 import Pricing from "../pages/Pricing";
 import Faq from "../pages/Faq";
+import Profile from "../pages/Profile";
+import People from "../pages/People";
 
 const protectedRoutes = [
   { path: "dashboard/sales", element: <SalesMonitoring /> },
@@ -112,7 +114,9 @@ const protectedRoutes = [
   { path: "docs/icon/remix", element: <IconRemix /> },
   { path: "docs/icon/feather", element: <IconFeather /> },
   { path: "pages/pricing", element: <Pricing /> },
-  { path: "pages/faq", element: <Faq /> }
+  { path: "pages/faq", element: <Faq /> },
+  { path: "pages/profile", element: <Profile /> },
+  { path: "pages/people", element: <People /> }
 ]
 
 export default protectedRoutes;
