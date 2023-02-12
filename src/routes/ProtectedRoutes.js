@@ -55,10 +55,15 @@ import MapLeaflet from "../docs/MapLeaflet";
 import MapVector from "../docs/MapVector";
 import IconRemix from "../docs/IconRemix";
 import IconFeather from "../docs/IconFeather";
+
+// Pages
 import Pricing from "../pages/Pricing";
 import Faq from "../pages/Faq";
 import Profile from "../pages/Profile";
 import People from "../pages/People";
+import Activity from "../pages/Activity";
+import Events from "../pages/Events";
+import Settings from "../pages/Settings";
 
 const protectedRoutes = [
   { path: "dashboard/sales", element: <SalesMonitoring /> },
@@ -116,7 +121,10 @@ const protectedRoutes = [
   { path: "pages/pricing", element: <Pricing /> },
   { path: "pages/faq", element: <Faq /> },
   { path: "pages/profile", element: <Profile /> },
-  { path: "pages/people", element: <People /> }
+  { path: "pages/people", element: <People /> },
+  { path: "pages/activity", element: <Activity /> },
+  { path: "pages/events", element: <Events /> },
+  { path: "pages/settings", element: <Settings /> }
 ]
 
 export default protectedRoutes;

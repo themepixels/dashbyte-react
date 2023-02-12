@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, Col, Nav, Row } from "react-bootstrap";
 import Footer from "../layouts/Footer";
 import HeaderMobile from "../layouts/HeaderMobile";
+import Avatar from "../components/Avatar";
 
 import img1 from "../assets/img/img1.jpg";
 import img5 from "../assets/img/img5.jpg";
@@ -13,7 +14,6 @@ import img9 from "../assets/img/img9.jpg";
 import img10 from "../assets/img/img10.jpg";
 import img11 from "../assets/img/img11.jpg";
 import img12 from "../assets/img/img12.jpg";
-import Avatar from "../components/Avatar";
 
 export default function Profile() {
   return (
