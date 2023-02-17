@@ -37,7 +37,6 @@ import FormChecksRadios from "../docs/FormChecksRadios";
 import FormRange from "../docs/FormRange";
 import FormPickers from "../docs/FormPickers";
 import FormLayouts from "../docs/FormLayouts";
-import FormEditors from "../docs/FormEditors";
 import UtilBackground from "../docs/UtilBackground";
 import UtilBorder from "../docs/UtilBorder";
 import UtilColors from "../docs/UtilColors";
@@ -64,6 +63,16 @@ import People from "../pages/People";
 import Activity from "../pages/Activity";
 import Events from "../pages/Events";
 import Settings from "../pages/Settings";
+
+// Apps
+import GalleryMusic from "../apps/GalleryMusic";
+import GalleryVideo from "../apps/GalleryVideo";
+import Tasks from "../apps/Tasks";
+import Contacts from "../apps/Contacts";
+import Chat from "../apps/Chat";
+import AppCalendar from "../apps/AppCalendar";
+import Email from "../apps/Email";
+import FileManager from "../apps/FileManager";
 
 const protectedRoutes = [
   { path: "dashboard/sales", element: <SalesMonitoring /> },
@@ -100,7 +109,6 @@ const protectedRoutes = [
   { path: "docs/form/range", element: <FormRange /> },
   { path: "docs/form/pickers", element: <FormPickers /> },
   { path: "docs/form/layouts", element: <FormLayouts /> },
-  { path: "docs/form/editors", element: <FormEditors /> },
   { path: "docs/util/background", element: <UtilBackground /> },
   { path: "docs/util/border", element: <UtilBorder /> },
   { path: "docs/util/colors", element: <UtilColors /> },
@@ -124,7 +132,15 @@ const protectedRoutes = [
   { path: "pages/people", element: <People /> },
   { path: "pages/activity", element: <Activity /> },
   { path: "pages/events", element: <Events /> },
-  { path: "pages/settings", element: <Settings /> }
+  { path: "pages/settings", element: <Settings /> },
+  { path: "apps/gallery-music", element: <GalleryMusic /> },
+  { path: "apps/gallery-video", element: <GalleryVideo /> },
+  { path: "apps/tasks", element: <Tasks /> },
+  { path: "apps/contacts", element: <Contacts /> },
+  { path: "apps/chat", element: <Chat /> },
+  { path: "apps/calendar", element: <AppCalendar /> },
+  { path: "apps/email", element: <Email /> },
+  { path: "apps/file-manager", element: <FileManager /> }
 ]
 
 export default protectedRoutes;

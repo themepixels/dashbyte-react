@@ -13,8 +13,8 @@ export default class Sidebar extends Component {
     toggleFooterMenu = (e) => {
         e.preventDefault();
 
-        let parent = e.target.closest('.sidebar');
-        parent.classList.toggle('footer-menu-show');
+        let parent = e.target.closest(".sidebar");
+        parent.classList.toggle("footer-menu-show");
     }
 
     render() {

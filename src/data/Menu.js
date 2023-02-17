@@ -1,3 +1,4 @@
+
 const dashboardMenu = [
   {
     "label": "Finance Monitoring",
@@ -332,10 +333,6 @@ const uiElementsMenu = [
       {
         "label": "Layouts",
         "link": "/docs/form/layouts"
-      },
-      {
-        "label": "Editors",
-        "link": "/docs/form/editors"
       }
     ]
   },

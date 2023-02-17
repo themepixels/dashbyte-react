@@ -60,7 +60,7 @@
 
   hr {
     opacity: 1;
-    background-color: rgba($border-color, .6);
+    border-color: rgba($border-color, .6);
   }
 
   .sidebar-label { padding: 0; }
@@ -305,7 +305,7 @@
 
   hr {
     opacity: 1;
-    background-color: $border-color;
+    border-color: $border-color;
   }
 
   .section-label {

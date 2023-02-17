@@ -1,3 +1,51 @@
+.app-calendar {
+  .react-datepicker {
+    width: 100%;
+    border-width: 0;
+    border-radius: 6px;
+    @include shadow-dreamy($gray-400);
+  }
+
+  .react-datepicker__header {
+    border-bottom-width: 0;
+    background-color: inherit;
+  }
+
+  .react-datepicker__week {
+    display: flex;
+  }
+
+  .react-datepicker__month-container {
+    float: none;
+  }
+
+  .react-datepicker__current-month {
+    padding: 5px 0;
+  }
+
+  .react-datepicker__navigation-icon {
+    top: 4px;
+  }
+
+  .react-datepicker__day, 
+  .react-datepicker__day:hover, 
+  .react-datepicker__day:active {
+    width: auto;
+    flex: 1;
+  }
+
+  .react-datepicker__day-names {
+    display: flex;
+  }
+
+  .react-datepicker__day-name {
+    width: auto;
+    flex: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+  }
+}
 
 .main-calendar {
   min-height: inherit;
@@ -123,16 +171,23 @@
 
 .calendar-body {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
   @include transition(all 0.25s);
 
   @include media-breakpoint-up(xl) {
     left: 300px;
     padding-left: 0;
+  }
+
+  .fc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 
   .fc-toolbar-chunk { display: flex; }
@@ -316,7 +371,15 @@
     .fc-daygrid-day-number { color: $primary; }
   }
 
-  .fc-event-title { cursor: pointer; }
+  .fc-event-title { 
+    cursor: pointer; 
+    color: $dark;
+  }
+
+  .fc-timegrid-event .fc-event-time {
+    color: $gray-700;
+    font-family: $font-family-sans-serif;
+  }
 }
 
 .modal-event {
