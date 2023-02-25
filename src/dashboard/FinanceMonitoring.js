@@ -472,7 +472,7 @@ export default function FinanceMonitoring() {
   const currentSkin = (localStorage.getItem('skin-mode')) ? 'dark' : '';
   const [skin, setSkin] = useState(currentSkin);
 
-  const switchSkin = () => {
+  const switchSkin = (skin) => {
     if (skin === 'dark') {
       const btnWhite = document.getElementsByClassName('btn-white');
   
@@ -490,10 +490,10 @@ export default function FinanceMonitoring() {
     }
   };
 
-  switchSkin();
+  switchSkin(skin);
   useEffect(() => {
-    switchSkin();
-  }, []);
+    switchSkin(skin);
+  }, [skin]);
 
   return (
     <React.Fragment>
