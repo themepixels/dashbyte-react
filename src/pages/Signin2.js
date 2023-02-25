@@ -15,24 +15,26 @@ export default function Signin2() {
               <Card.Text>Welcome back! Please signin to continue.</Card.Text>
             </Card.Header>
             <Card.Body>
-              <div className="mb-4">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="text" placeholder="Enter your email address" />
-              </div>
-              <div className="mb-4">
-                <Form.Label className="d-flex justify-content-between">
-                  Password <Link to="">Forgot password?</Link>
-                </Form.Label>
-                <Form.Control type="password" placeholder="Enter your password" />
-              </div>
-              <Button className="btn-sign">Sign In</Button>
+              <Form method="get" action="/dashboard/finance">
+                <div className="mb-4">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="text" placeholder="Enter your email address" value="me@themepixels.com" />
+                </div>
+                <div className="mb-4">
+                  <Form.Label className="d-flex justify-content-between">
+                    Password <Link to="">Forgot password?</Link>
+                  </Form.Label>
+                  <Form.Control type="password" placeholder="Enter your password" value="password123" />
+                </div>
+                <Button type="submit" className="btn-sign">Sign In</Button>
 
-              <div className="divider"><span>or sign in with</span></div>
+                <div className="divider"><span>or sign in with</span></div>
 
-              <Row className="gx-2">
-                <Col><Button variant="" className="btn-facebook"><i className="ri-facebook-fill"></i> Facebook</Button></Col>
-                <Col><Button variant="" className="btn-google"><i className="ri-google-fill"></i> Google</Button></Col>
-              </Row>
+                <Row className="gx-2">
+                  <Col><Button variant="" className="btn-facebook"><i className="ri-facebook-fill"></i> Facebook</Button></Col>
+                  <Col><Button variant="" className="btn-google"><i className="ri-google-fill"></i> Google</Button></Col>
+                </Row>
+              </Form>
             </Card.Body>
             <Card.Footer>
               Don't have an account? <Link to="/pages/signup2">Create an Account</Link>
@@ -41,7 +43,7 @@ export default function Signin2() {
         </Col>
         <Col className="d-none d-lg-block">
           <img src={bg1} className="auth-img" alt="" />
-          </Col>
+        </Col>
       </Row>
     </div>
   )
