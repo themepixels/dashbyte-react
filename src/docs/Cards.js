@@ -458,7 +458,7 @@ export default function Cards() {
             <Card.Body>
               <Row xs={1} md={2} className="g-2">
                 {Array.from({ length: 4 }).map((_, idx) => (
-                  <Col>
+                  <Col key={idx}>
                     <Card>
                       <Card.Img variant="top" src={img2} />
                       <Card.Body>

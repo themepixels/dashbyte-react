@@ -246,3 +246,16 @@
   font-size: 24px;
   margin-bottom: 15px;
 }
+
+.apex-chart-one {
+  position: relative;
+  left: -12px;
+  width: calc(100% + 20px);
+}
+
+.card-vmap {
+  .jvectormap-zoomin,
+  .jvectormap-zoomout {
+    display: none;
+  }
+}

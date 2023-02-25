@@ -20,19 +20,6 @@
   @include media-breakpoint-up(xl) { height: 100%; }
 }
 
-.flot-chart-ten {
-  position: relative;
-  width: calc(100% + 16px);
-  height: 240px;
-  left: -8px;
-  bottom: -8px;
-
-  @include media-breakpoint-up(md) {
-    height: calc(100% + 8px);
-    bottom: auto;
-  }
-}
-
 .peity-two {
   position: relative;
 
@@ -84,21 +71,6 @@
   }
 }
 
-.flot-chart-eleven {
-  position: relative;
-  height: 200px;
-  width: calc(100% + 16px);
-  left: -8px;
-
-  .flot-tick-label {
-    text-transform: uppercase;
-    font-family: $ff-numerals;
-    font-size: 10px;
-    font-weight: 500;
-    color: $secondary;
-  }
-}
-
 .table-agent {
   white-space: nowrap;
 
@@ -136,4 +108,25 @@
   .badge { display: block; }
 
   h6 { color: $gray-800; }
+}
+
+.apex-donut-one {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  > div:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

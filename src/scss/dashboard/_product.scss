@@ -114,26 +114,6 @@
   border-top-right-radius: 6px;
 }
 
-.flot-chart-fifteen {
-  position: relative;
-  height: 230px;
-  width: calc(100% + 20px);
-  left: -10px;
-  overflow: hidden;
-
-  @include media-breakpoint-up(md) {
-    height: 100%;
-  }
-
-  .flot-tick-label {
-    text-transform: uppercase;
-    font-size: 9px;
-    font-family: $ff-numerals;
-    font-weight: 500;
-    color: $secondary;
-  }
-}
-
 .product-review-footer {
   display: flex;
   align-items: center;
@@ -165,4 +145,9 @@
     font-size: 16px;
     line-height: 1.2;
   }
+}
+
+.apex-chart-twelve {
+  position: relative;
+  margin-left: -15px;
 }

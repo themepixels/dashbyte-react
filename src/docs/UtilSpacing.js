@@ -27,7 +27,7 @@ export default function UtilSpacing() {
           <Table className="table-spacing">
             <tbody>
               <tr>
-                <td colspan="2" className="text-dark ps-0">Where <strong>property</strong> is one of:</td>
+                <td colSpan="2" className="text-dark ps-0">Where <strong>property</strong> is one of:</td>
               </tr>
               <tr>
                 <td><code>m</code></td>
@@ -38,7 +38,7 @@ export default function UtilSpacing() {
                 <td>for classes that set padding</td>
               </tr>
               <tr>
-                <td colspan="2" className="text-dark ps-0">Where <strong>sides</strong> is one of:</td>
+                <td colSpan="2" className="text-dark ps-0">Where <strong>sides</strong> is one of:</td>
               </tr>
               <tr>
                 <td><code>t</code></td>
@@ -57,7 +57,7 @@ export default function UtilSpacing() {
                 <td>for classes that set <code>margin-right</code> or <code>padding-right</code></td>
               </tr>
               <tr>
-                <td colspan="2" className="text-dark ps-0">Where <strong>size</strong> is one of:</td>
+                <td colSpan="2" className="text-dark ps-0">Where <strong>size</strong> is one of:</td>
               </tr>
               <tr>
                 <td><code>0</code></td>

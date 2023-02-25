@@ -4,7 +4,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import userAvatar from "../assets/img/img1.jpg";
 import notification from "../data/Notification";
 
-export default function Header() {
+export default function Header({ onSkin }) {
   const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <Link
       to=""
@@ -70,9 +70,14 @@ export default function Header() {
     if (skin === "dark") {
       HTMLTag.setAttribute("data-skin", skin);
       localStorage.setItem('skin-mode', skin);
+
+      onSkin(skin);
+
     } else {
       HTMLTag.removeAttribute("data-skin");
       localStorage.removeItem('skin-mode');
+
+      onSkin('');
     }
 
   };

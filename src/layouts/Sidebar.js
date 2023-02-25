@@ -142,8 +142,9 @@ class SidebarMenu extends Component {
 window.addEventListener("click", function (e) {
     // Close sidebar footer menu when clicked outside of it
     let tar = e.target;
-    if (!tar.closest(".sidebar-footer")) {
-        document.querySelector(".sidebar").classList.remove("footer-menu-show");
+    let sidebar = document.querySelector(".sidebar");
+    if (!tar.closest(".sidebar-footer") && sidebar) {
+        sidebar.classList.remove("footer-menu-show");
     }
 
     // Hide sidebar offset when clicked outside of sidebar

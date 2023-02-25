@@ -53,7 +53,7 @@ export default function Profile() {
                   "label": "Followers"
                 }
               ].map((profileItem, index) => (
-                <Col>
+                <Col key={index}>
                   <div className="profile-item">
                     <i className={profileItem.icon}></i>
                     <div className="profile-item-body">

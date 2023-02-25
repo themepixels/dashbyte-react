@@ -113,19 +113,19 @@ export default function Settings() {
                           "img": img14,
                           "name": "Adrian Moniño",
                           "date": "May 20, 2023"
-                        },{
+                        }, {
                           "img": img10,
                           "name": "Socrates Itumay",
                           "date": "Apr 10, 2023"
-                        },{
+                        }, {
                           "img": img8,
                           "name": "Rhea Castañares",
                           "date": "Feb 16, 2023"
-                        },{
+                        }, {
                           "img": img9,
                           "name": "Marianne Audrey",
                           "date": "Feb 10, 2023"
-                        },{
+                        }, {
                           "img": img11,
                           "name": "Reynante Labares",
                           "date": "Dec 20, 2022"
@@ -169,38 +169,38 @@ export default function Settings() {
                     "icon": "ri-disqus-fill",
                     "name": "Disqus",
                     "text": "An American blog comment hosting service for web sites and online communities that use a networked platform."
-                  },{
+                  }, {
                     "bg": "bg-dropbox",
                     "icon": "ri-dropbox-fill",
                     "name": "Dropbox",
                     "text": "A file hosting service company that offers cloud storage, file synchronization, personal cloud, and client software."
-                  },{
+                  }, {
                     "bg": "bg-evernote",
                     "icon": "ri-evernote-fill",
                     "name": "Evernote",
                     "text": "An app that allows users to create notes, which can be text, drawings, photographs, audio, or saved web content."
-                  },{
+                  }, {
                     "bg": "bg-messenger",
                     "icon": "ri-messenger-fill",
                     "name": "Messenger",
                     "text": "A proprietary instant messaging app developed by Meta Platforms. Originally developed as Facebook Chat in 2008."
                   }
                 ].map((app, index) => (
-                  <Col md="6">
-                <Card className="card-app">
-                  <Card.Body>
-                    <div className={"card-logo " + app.bg}><i className={app.icon}></i></div>
-                    <div className="app-body">
-                      <h6>{app.name}</h6>
-                      <p>{app.text}</p>
-                    </div>
-                  </Card.Body>
-                  <Card.Footer>
-                    <Link to="">Preferences</Link>
-                    <Form.Check type="switch" checked />
-                  </Card.Footer>
-                </Card>
-              </Col>
+                  <Col md="6" key={index}>
+                    <Card className="card-app">
+                      <Card.Body>
+                        <div className={"card-logo " + app.bg}><i className={app.icon}></i></div>
+                        <div className="app-body">
+                          <h6>{app.name}</h6>
+                          <p>{app.text}</p>
+                        </div>
+                      </Card.Body>
+                      <Card.Footer>
+                        <Link to="">Preferences</Link>
+                        <Form.Check type="switch" checked onChange={()=>''} />
+                      </Card.Footer>
+                    </Card>
+                  </Col>
                 ))}
               </Row>
             </div>

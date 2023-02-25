@@ -66,6 +66,8 @@
   .sidebar-logo {
     font-size: 28px;
     margin-right: auto;
+
+    &::after { bottom: 4px; }
   }
 
   .nav-icon .nav-link {
@@ -191,7 +193,7 @@
       height: 100%;
       top: 0;
       left: 50%;
-      margin-left: -calc(52% / 2);
+      transform: translateX(-50%);
       z-index: 10;
     }
 
@@ -283,8 +285,18 @@
 }
 
 .landing-icons {
+  display: flex;
+  align-items: center;
   font-size: 20px;
   @include media-breakpoint-up(lg) { font-size: 24px; }
+
+  .divider {
+    border-left: 1px dotted $gray-500;
+    height: 30px;
+    margin: 0 5px;
+  }
+
+  > div { display: flex; }
 }
 
 .icon-bootstrap { color: #7711f7; }
@@ -294,3 +306,4 @@
 .icon-js { color: #ffc107; }
 .icon-npm { color: #c53635; }
 .icon-gulp { color: #d34446; }
+.icon-react { color: #00d1f7; }

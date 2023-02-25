@@ -291,7 +291,7 @@ export default function Contacts() {
                     <label className="sidebar-label mb-2">{contact.group}</label>
                     <div className="contact-group mb-3">
                       {contact.items.map((item, ind) => (
-                        <div className={item.selected ? "contact-item selected" : "contact-item"}>
+                        <div key={ind} className={item.selected ? "contact-item selected" : "contact-item"}>
                           <div className={"avatar " + item.status}>
                             {item.thumb && <img src={item.thumb} alt="" />}
                             {item.initial && <span className={"avatar-initial text-white bg-" + item.initial}>{contact.group}</span>}

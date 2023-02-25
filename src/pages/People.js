@@ -86,7 +86,7 @@ export default function People() {
                   "mutual": [img1, img12]
                 }
               ].map((connection, index) => (
-                <Col sm="6" md="4">
+                <Col sm="6" md="4" key={index}>
                   <Card className="card-people">
                     <Card.Body>
                       <Link to=""><Avatar img={connection.img} size="xl" status="online" /></Link>
@@ -134,7 +134,7 @@ export default function People() {
                   "mutual": [img7, img9]
                 }
               ].map((connection, index) => (
-                <Col sm="6" md="4">
+                <Col sm="6" md="4" key={index}>
                   <Card className="card-people">
                     <Card.Body>
                       <Link to=""><Avatar img={connection.img} size="xl" status="online" /></Link>
@@ -182,7 +182,7 @@ export default function People() {
                   "mutual": [img6, img11]
                 }
               ].map((connection, index) => (
-                <Col sm="6" md="4">
+                <Col sm="6" md="4" key={index}>
                   <Card className="card-people">
                     <Card.Body>
                       <Link to=""><Avatar img={connection.img} size="xl" status="online" /></Link>

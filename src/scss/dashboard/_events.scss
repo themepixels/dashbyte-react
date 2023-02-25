@@ -12,19 +12,11 @@
   }
 }
 
-.flot-chart-twelve {
-  position: relative;
-  width: calc(100% + 35px);
-  height: 380px;
-  left: -25px;
-  bottom: -25px;
-
-  @include media-breakpoint-up(sm) { height: 340px; }
-  @include media-breakpoint-up(xl) { height: 100%; }
-}
-
 .card-ticket-available {
   overflow: hidden;
+  height: 200px;
+
+  @include media-breakpoint-up(lg) { height: 100%; }
 
   .card-body {
     position: absolute;
@@ -39,6 +31,16 @@
     height: 200px;
 
     @include media-breakpoint-up(sm) { height: 170px; }
+  }
+
+  .apex-chart {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+
+    @include media-breakpoint-up(sm) {
+      height: 100%;
+    }
   }
 }
 
@@ -62,10 +64,15 @@
     left: -8px;
     bottom: -8px;
   }
+
+  .apex-chart {
+    height: 210px;
+    position: relative;
+  }
 }
 
 .chartjs-three {
-  height: 270px; 
+  height: 270px;
   @include media-breakpoint-up(xl) { height: 325px; }
 }
 .chart-donut-two { height: 225px; }

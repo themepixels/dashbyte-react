@@ -306,8 +306,8 @@ export default function GalleryMusic() {
                   "desc": "Debitis aut rerum neces sitatibus saepe eveniet..."
                 }
               ].map((podcast, index) => (
-                <div className="media-music">
-                  <Link to="" className="media-img" key={index}><img src={podcast.img} alt="" /></Link>
+                <div key={index} className="media-music">
+                  <Link to="" className="media-img"><img src={podcast.img} alt="" /></Link>
                   <div className="media-body">
                     <h6><Link to="">{podcast.title}</Link></h6>
                     <span>{podcast.desc}</span>

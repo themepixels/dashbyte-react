@@ -1,22 +1,3 @@
-.flot-chart-thirteen {
-  width: calc(100% + 16px);
-  height: 200px;
-  position: relative;
-  left: -8px;
-
-  @include media-breakpoint-up(xl) { bottom: -8px; }
-
-  .flot-tick-label {
-    text-transform: uppercase;
-    font-size: 9px;
-    font-family: $ff-numerals;
-    font-weight: 500;
-    padding-top: 5px;
-    white-space: nowrap;
-    color: $secondary;
-  }
-}
-
 .card-daily-trends {
   position: relative;
   overflow: hidden;
@@ -94,24 +75,11 @@
   }
 }
 
-.flot-chart-fourteen {
+.apex-chart-eleven {
   position: relative;
-  height: 240px;
+  left: -25px;
+  width: calc(100% + 40px);
+  height: 250px;
 
   @include media-breakpoint-up(xl) { height: 100%; }
-
-  .flot-tick-label {
-    font-family: $ff-numerals;
-    font-size: 11px;
-  }
-
-  .flot-x-axis {
-    .flot-tick-label {
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 8px;
-
-      @include media-breakpoint-up(xl) { font-size: 10px; }
-    }
-  }
 }

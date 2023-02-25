@@ -1,19 +1,4 @@
 
-.flot-chart-five {
-  width: calc(100% + 15px);
-  height: 120px;
-  position: relative;
-  left: -8px;
-  margin-top: -20px;
-
-  .flot-tick-label {
-    font-size: 8px;
-    font-family: $ff-numerals;
-    font-weight: 500;
-    color: $secondary;
-  }
-}
-
 .finance-info {
   position: absolute;
   top: 0;
@@ -60,24 +45,6 @@
   }
 }
 
-.flot-chart-six {
-  height: 400px;
-  position: relative;
-  left: -30px;
-  width: calc(100% + 56px);
-
-  @include media-breakpoint-up(xl) { height: 100%; }
-
-  .flot-tick-label {
-    text-transform: uppercase;
-    font-size: 9px;
-    font-family: $ff-secondary;
-    font-weight: $font-weight-medium;
-    letter-spacing: .5px;
-    color: $secondary;
-  }
-}
-
 .nav-finance-one {
   position: absolute;
   top: 0;
@@ -100,16 +67,14 @@
   }
 }
 
-.flot-chart-seven {
-  position: relative;
-  width: calc(100% + 12px);
-  height: 90px;
-  left: -5px;
-}
-
 .card-wallet {
   position: relative;
   overflow: hidden;
+  height: 240px;
+
+  @include media-breakpoint-up(md) {
+    height: 100%;
+  }
 
   .card-body {
     padding: 23px 25px;
@@ -177,31 +142,10 @@
     @include media-breakpoint-up(md) { height: 100%; }
     @include media-breakpoint-up(xl) { height: 100%; }
   }
-}
 
-.flot-chart-eight {
-  position: relative;
-  height: 200px;
-  width: calc(100% + 15px);
-  left: -5px;
-
-  .flot-tick-label { font-weight: 500; }
-
-  .flot-y-axis {
-    .flot-tick-label {
-      font-size: 10px;
-      font-family: $ff-numerals;
-    }
-  }
-
-  .flot-x-axis {
-    .flot-tick-label {
-      letter-spacing: .2px;
-      text-transform: uppercase;
-      font-size: 9px;
-      font-family: $ff-secondary;
-      color: $secondary;
-    }
+  .apex-chart-two {
+    display: flex;
+    align-items: flex-end;
   }
 }
 
@@ -212,28 +156,6 @@
   .progress-bar { font-size: $font-size-base; }
   .progress-bar:nth-child(2) { background-color: $color-ui-02; }
   .progress-bar:last-child { background-color: $color-ui-03; }
-}
-
-.flot-chart-nine {
-  width: calc(100% + 10px);
-  height: 200px;
-  position: relative;
-  left: -5px;
-  top: -5px;
-
-  @include media-breakpoint-up(md) { height: calc(100% + 10px); }
-
-  .flot-tick-label {
-    font-family: $ff-numerals;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-
-  .flot-y-axis { font-size: 10px; }
-  .flot-x-axis {
-    font-size: 9px;
-    color: $gray-500;
-  }
 }
 
 .finance-peity-donut {
@@ -295,5 +217,32 @@
     font-size: $font-size-sm;
     font-weight: $font-weight-medium;
     color: $dark;
+  }
+}
+
+.apex-chart-two {
+  position: relative;
+  left: -15px;
+  width: calc(100% + 35px);
+}
+
+.apex-chart-three {
+  position: relative;
+  left: -25px;
+  width: calc(100% + 40px);
+
+  .apexcharts-xaxis-label {
+    position: relative;
+    transform: translateY(-8px);
+  }
+}
+
+.apex-donut-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .apexcharts-canvas {
+    transform: scale(1.1);
   }
 }

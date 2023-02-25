@@ -238,7 +238,7 @@ export default function Events() {
                   "count": 45
                 }
               ].map((category, index) => (
-                <Nav.Link href=""><i className={category.icon}></i><span>{category.name}</span> <span className="badge">{category.count}</span></Nav.Link>
+                <Nav.Link href="" key={index}><i className={category.icon}></i><span>{category.name}</span> <span className="badge">{category.count}</span></Nav.Link>
               ))}
             </Nav>
 
